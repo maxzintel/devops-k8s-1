@@ -1,0 +1,12 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: hello-world
+  labels:
+    name: hello-world
+spec:
+  containers:
+  - name: hello-world
+    image: s1dequest/hello-world
+    ports:
+      - containerPort: 3000
