@@ -28,7 +28,7 @@ Practicing DevOps principles with K8s, vol 1.
   * `kubectl attach <podname> -i`: Attach to the pod
   * `kubectl exec <pod> -- command`: Execute a command on the pod
   * `kubectl label pods <pod> mylabel=NotALabel`: Add a new label to a pod
-  * `kubectl run -i --tty busybox --image=busybox --restart=Never -- sh`: Run a shell in a pod - very useful for debugging
+  * `kubectl run -i --tty busybox --image=busybox --restart=Never -- sh`: Run a shell in a pod - very useful for debugging, connect to malfunctioning pod.
   * `kubectl get deployments`: Get information on current deployments
   * `kubectl get rs`: Get information about the replica sets
   * `kubectl get pods --show-labels`: get pods, and also show labels attached to those pods
