@@ -8,6 +8,10 @@ Practicing DevOps principles with K8s, vol 1.
   * minikube
   * hyperV as VM Driver
 
+## Notes about Containerization:
+  * Limit to one process per container. Ex: your database is one set (cluster) of containers, your express server is another. Combining these two processes into one massive container is bad practice and is generally contrary to the philosophy behind containerization.
+  * Data within a container is not preserved by default. Meaning, if you stop a container (and it has no backups, ebs volumes, etc...), all changes that occurred within that container are lost.
+
 ## Docker Cheatsheet:
   * Build image: `docker build .`
   * Build & Tag: `docker build -t user/name:latest .`
